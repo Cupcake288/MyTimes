@@ -30,3 +30,30 @@ nav span{
   display: inline-block;
   padding: 20px 10px;
 }
+
+/*content*/
+
+.content{
+  display: flex;
+}
+.column{
+  display: flex;
+  flex-wrap: wrap;
+}
+.large{
+  width: 630px;
+}
+.medium{
+  width: 300px;
+}
+.small{
+  width: 240px;
+}
+.story{
+
+}
+
+/*black borders*/
+div {
+  border: solid black 1px;
+}
