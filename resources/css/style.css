@@ -1,1 +1,32 @@
+/*header */
 
+header{
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border-bottom: solid black 1px;
+  padding-bottom: 10px;
+}
+header a:link, a:visited{
+  text-decoration: underline;
+  color: inherit;
+}
+.logo{
+    display: flex;
+    padding-left: 30px;
+    flex-grow: 1;
+    align-items: center;
+}
+.logo span{
+  color: MediumAquamarine;
+  padding-left: 10px;
+}
+nav{
+  padding-right: 40px;
+}
+nav span{
+  display: inline-block;
+  padding: 20px 10px;
+}
