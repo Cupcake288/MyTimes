@@ -52,6 +52,9 @@ nav span{
 .story{
 
 }
+img{
+  object-fit: contain;
+}
 
 /*black borders*/
 div {
