@@ -35,6 +35,7 @@ nav span{
 
 .content{
   display: flex;
+  font-family: Georgia, sans-serif;
 }
 .column{
   display: flex;
@@ -52,10 +53,43 @@ nav span{
 .story{
 
 }
+
+/*images*/
+.story-image{
+  display: flex;
+  height: 300px;
+  justify-content: center;
+}
+.story-image span{
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+.main-image{
+  background-image: url(../images/img-story-main.png);
+}
+.main-image span{
+  font-size: 40px;
+  text-align: left;
+}
+.fall-image{
+  background-image: url(../images/img-story-2-fall.png);
+}
+.camera-image{
+  background-image: url(../images/img-story-3-cameraman.png);
+}
+.cat-image{
+  background-image: url(../images/img-story-1-cat.png);
+}
 img{
   object-fit: contain;
 }
-
+/*text content stories*/
+.story-text p{
+  font-size: 17px;
+  color: black;
+}
 /*black borders*/
 div {
   border: solid black 1px;
