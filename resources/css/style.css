@@ -5,6 +5,7 @@ header{
   font-size: 14px;
   font-weight: bold;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   border-bottom: solid black 1px;
   padding-bottom: 10px;
@@ -23,11 +24,11 @@ header a:link, a:visited{
   color: MediumAquamarine;
   padding-left: 10px;
 }
-nav{
+header nav{
   padding-right: 40px;
 }
 nav span{
-  display: inline-block;
+  display: inline-flex;
   padding: 20px 10px;
 }
 
@@ -36,25 +37,29 @@ nav span{
 .content{
   display: flex;
   font-family: Georgia, sans-serif;
+  flex-wrap: wrap;
 }
 .column{
   display: flex;
   flex-wrap: wrap;
 }
 .large{
-  width: 630px;
+  max-width: 630px;
 }
 .medium{
-  width: 300px;
+  max-width: 300px;
 }
 .small{
-  width: 240px;
+  max-width: 240px;
 }
 .lead-story{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .story{
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   width: 300px;
   justify-content: space-between;
@@ -64,6 +69,23 @@ nav span{
   flex-direction: column;
   align-content: flex-start;
 }
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 300px;
+}
+.footer-info{
+  display: inline-flex;
+  align-items: center;
+  justify-content:flex-end;
+}
+
 
 /*images*/
 .story-image{
@@ -117,6 +139,18 @@ img{
   color: DimGray;
   padding: 10px 20px;
   border-bottom: solid black 1px;
+}
+/*footer text*/
+.footer-title{
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: solid white 2px;
+}
+.footer nav{
+  padding-left: 25px;
 }
 /*black borders*/
 div {
