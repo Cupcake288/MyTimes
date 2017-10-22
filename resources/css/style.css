@@ -1,6 +1,9 @@
+body{
+  width: 100%;
+}
 /*header */
-
 header{
+background-color: white;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
@@ -8,7 +11,13 @@ header{
   flex-wrap: wrap;
   align-items: center;
   border-bottom: solid black 1px;
-  padding-bottom: 10px;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 10;
 }
 header a:link, a:visited{
   text-decoration: underline;
@@ -32,16 +41,21 @@ nav span{
   padding: 20px 10px;
 }
 
-/*content*/
+/*section-boxes*/
 
 .content{
   display: flex;
   font-family: Georgia, sans-serif;
   flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+  top: 60px;
+  justify-content: center;
 }
 .column{
   display: flex;
   flex-wrap: wrap;
+  margin: 30px 10px;
 }
 .large{
   max-width: 630px;
@@ -52,10 +66,16 @@ nav span{
 .small{
   max-width: 240px;
 }
+.stories{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 .lead-story{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin: 7px;
 }
 .story{
   display: flex;
@@ -63,35 +83,21 @@ nav span{
   flex-direction: column;
   width: 300px;
   justify-content: space-between;
+  margin: 7px;
 }
 .news-bites{
   display: flex;
   flex-direction: column;
   align-content: flex-start;
+  margin: 7px;
 }
-.footer{
-  display: flex;
-  flex-direction: column;
-  justify-content:center;
-  align-items: center;
-  background-color: MediumAquamarine;
-  margin: auto;
-  font-family: Verdana;
-  font-size: 12px;
-  height: 300px;
-}
-.footer-info{
-  display: inline-flex;
-  align-items: center;
-  justify-content:flex-end;
-}
-
-
 /*images*/
 .story-image{
   display: flex;
   height: 300px;
   justify-content: center;
+  align-items: center;
+  padding: 0 20px;
 }
 .story-image span{
   color: white;
@@ -119,9 +125,6 @@ img{
   object-fit: contain;
 }
 /*text content stories*/
-.story-text{
-  padding: 0 10px;
-}
 .story-text p{
   font-size: 17px;
   color: black;
@@ -137,10 +140,28 @@ img{
   font-family: Verdana;
   font-size: 12px;
   color: DimGray;
-  padding: 10px 20px;
   border-bottom: solid black 1px;
+  padding: 11px 20px;
 }
-/*footer text*/
+/*footer*/
+.footer{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  min-height: 300px;
+  position: relative;
+  top: 60px;
+}
+.footer-info{
+  display: inline-flex;
+  align-items: center;
+  justify-content:flex-end;
+}
 .footer-title{
   font-family: Georgia;
   font-size: 16px;
@@ -152,7 +173,7 @@ img{
 .footer nav{
   padding-left: 25px;
 }
-/*black borders*/
+/*black borders
 div {
   border: solid black 1px;
 }
