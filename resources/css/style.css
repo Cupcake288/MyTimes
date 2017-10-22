@@ -66,11 +66,6 @@ nav span{
 .small{
   max-width: 240px;
 }
-.stories{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
 .lead-story{
   display: flex;
   flex-direction: column;
